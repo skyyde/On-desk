@@ -1,12 +1,14 @@
 {
   "name": "on-desk",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/storage.test.mjs",
+    "test:e2e": "node tests/e2e.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
@@ -15,6 +17,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
+    "playwright": "^1.65.1",
     "vite": "^6.0.5"
   }
 }

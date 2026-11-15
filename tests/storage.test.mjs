@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createData,validateData,loadData,saveData,KEY} from '../src/v2/storage.js';
+import {durationBetween,weekStart,clampDate,urgency} from '../src/v2/date.js';
+test('complete backup round trip',()=>{const d=createData();assert.deepEqual(validateData(JSON.parse(JSON.stringify(d))),d);assert.equal(d.classes.length,10);assert.equal(d.planner.weeks.length,15)});
+test('corrupt sections rejected atomically',()=>{for(const k of ['tasks','classes','notes','photos','links','journal','planner','calendar']){const d=createData();d[k]=null;assert.throws(()=>validateData(d))}});
+test('unsafe links and images rejected',()=>{const d=createData();d.links.a='javascript:alert(1)';assert.throws(()=>validateData(d));d.links={};d.photos.a='https://evil.example/image';assert.throws(()=>validateData(d))});
+test('corrupt local data is not overwritten',()=>{const s=new Map([[KEY,'broken']]);const storage={getItem:k=>s.get(k)??null,setItem:(k,v)=>s.set(k,v)};assert.throws(()=>loadData(storage));assert.equal(s.get(KEY),'broken')});
+test('legacy migration preserves snapshot and data',()=>{const old={version:1,tasks:[{id:'t',title:'Read',completed:false,dueDate:'2026-11-16'}],events:[],subjects:[],journal:[{id:'j',date:'2026-11-15',text:'Hello'}],shortcuts:[]};const d=validateData(old);assert.equal(d.tasks[0].title,'Read');assert.equal(d.journal[0].body,'Hello');assert.deepEqual(d.legacy,old)});
+test('date and midnight duration logic',()=>{assert.equal(durationBetween('23:30','00:30'),60);assert.equal(weekStart('2026-11-15'),'2026-11-09');assert.equal(clampDate('2027-01-01'),'2026-12-31');assert.equal(urgency('2026-11-14','2026-11-15').text,'1d overdue')});

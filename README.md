@@ -27,7 +27,7 @@ npm run preview
 - Recurring classes are separate from tasks. Moving a class changes every week's schedule. Click a class for notes, or use **Manage class schedule** to edit, add, or delete classes.
 - **Subjects** opens the academic planner. Its topics, deadlines, dates, and grading weights are clearly labeled examples, not official academic information. Every field is editable. Reset affects only that planner.
 - **Journal** saves title/date/body automatically and sorts by last update. Subject notes and resources also autosave.
-- Shortcut **+** uploads a photo, center-cropped to 240×240 JPEG. Pencil buttons edit destinations. Course URLs are edited beside each course. Exact Canvas course IDs and ArchersHub URLs were not supplied: course shortcuts initially open Canvas; configure exact destinations before using them as direct course links. ArchersHub opens its link editor until configured.
+- **Customize links** reveals the shortcut controls. The **+** uploads a photo, center-cropped to 240×240 JPEG. Pencil buttons edit destinations. Expand **Course links** in the sidebar to edit course URLs. Exact Canvas course IDs and ArchersHub URLs were not supplied: course shortcuts initially open Canvas; configure exact destinations before using them as direct course links. ArchersHub opens its link editor until configured.
 
 ## Tablet app links and home screen
 
@@ -37,7 +37,7 @@ Shortcuts use HTTPS links. Android may open an installed service app if it regis
 
 ## Data and backups
 
-All data is stored only in this browser on this device under `on-desk-v2`. It does not synchronize. Export regularly using the sidebar. A reminder becomes stronger after seven days. Imports validate the complete schema before replacement, require confirmation, and retain current data when invalid. Storage failures produce a visible alert.
+All data is stored only in this browser on this device under `on-desk-v2`. It does not synchronize. Export regularly under **Backups & storage** in the sidebar. A reminder becomes stronger after seven days. Imports validate the complete schema before replacement, require confirmation, and retain current data when invalid. Storage failures produce a visible alert.
 
 Version 1 data is migrated automatically: tasks/calendar sessions and journals are converted, and course notes are retained. Custom subject content maps to Extracurricular where no known subject matches. The entire original state—including custom shortcuts and other unmatched fields—is preserved in `legacy` in v2 exports; the original `on-desk-v1` key remains untouched. A malformed saved workspace is never silently overwritten.
 

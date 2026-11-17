@@ -7,7 +7,8 @@
 @media(prefers-reduced-motion:reduce){button{transition:none}}
 .class-main{justify-content:flex-start;padding-top:9px}.class-main>.class-description{display:block;font-size:10px;line-height:1.25;letter-spacing:0;color:#6a5848;opacity:1;max-width:100%}@media(max-width:700px){.od-quick-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.od-quick-main{width:100%}.od-quick-art{width:40px;height:40px}}
 
-/* Vintage calligraphy for the app title and calendar date range only. */
-.desk-brand>div{font-family:'Pinyon Script',cursive;font-size:35px;font-weight:400;letter-spacing:0;line-height:1.15}
-.cal-period h2{font-family:'Pinyon Script',cursive;font-size:35px;font-weight:400;letter-spacing:0;line-height:1.2;white-space:nowrap}
-@media(max-width:700px){.desk-brand>div{font-size:32px}.cal-period h2{font-size:29px}}
+/* Keep original sizing with slightly stronger vintage calligraphy. */
+.desk-brand>div{font-family:'Pinyon Script',cursive;font-size:20px;font-weight:400;letter-spacing:0;line-height:1.15;-webkit-text-stroke:.25px currentColor}
+.cal-period h2{font-family:'Pinyon Script',cursive;font-size:22px;font-weight:400;letter-spacing:0;line-height:1.2;-webkit-text-stroke:.5px currentColor}
+@media(max-width:1150px){.cal-period h2{font-size:19px}}
+@media(max-width:700px){.desk-brand>div{font-size:20px}.cal-period h2{font-size:18px}}

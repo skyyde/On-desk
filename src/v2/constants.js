@@ -4,9 +4,9 @@ export const SUBJECTS = [
   { id: 'CSOPESY', name: 'CSOPESY', color: '#9B8276', text: '#2F2520', tint: '#EAE0D9' },
   { id: 'LCASEAN', name: 'LCASEAN', color: '#D8A7B3', text: '#422C34', tint: '#F6E8EC' },
   { id: 'NSETRON', name: 'NSETRON', color: '#E4D1AE', text: '#51412F', tint: '#F5EDDC' },
-  { id: 'CSSWENG', name: 'CSSWENG', color: '#B4B0A7', text: '#302D29', tint: '#EBE9E4' },
+  { id: 'CSSWENG', name: 'CSSWENG', color: '#A8B7A0', text: '#34412F', tint: '#E7EDE3' },
   { id: 'NSCOM03', name: 'NSCOM03', color: '#AEBCA3', text: '#34412F', tint: '#E8EEE2' },
-  { id: 'Extracurricular', name: 'Extracurricular', color: '#C7A38E', text: '#3D2B23', tint: '#F1E5DD' },
+  { id: 'Extracurricular', name: 'Extracurricular', color: '#B9A0B5', text: '#3E2E3E', tint: '#F0E7EF' },
 ];
 export const QUICK_LINKS = [
   { id: 'gmail', title: 'Gmail', url: 'https://mail.google.com/' },

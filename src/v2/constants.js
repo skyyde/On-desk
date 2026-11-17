@@ -4,7 +4,7 @@ export const SUBJECTS = [
   { id: 'CSOPESY', name: 'CSOPESY', color: '#9B8276', text: '#2F2520', tint: '#EAE0D9' },
   { id: 'LCASEAN', name: 'LCASEAN', color: '#D8A7B3', text: '#422C34', tint: '#F6E8EC' },
   { id: 'NSETRON', name: 'NSETRON', color: '#E4D1AE', text: '#51412F', tint: '#F5EDDC' },
-  { id: 'CSSWENG', name: 'CSSWENG', color: '#D9A8B6', text: '#4B303B', tint: '#F5E5EA' },
+  { id: 'CSSWENG', name: 'CSSWENG', color: '#A6B89A', text: '#30412F', tint: '#E8EEE3' },
   { id: 'NSCOM03', name: 'NSCOM03', color: '#AEBCA3', text: '#34412F', tint: '#E8EEE2' },
   { id: 'Extracurricular', name: 'Extracurricular', color: '#E6BDC6', text: '#51343C', tint: '#F8EBEE' },
 ];

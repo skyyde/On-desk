@@ -1,12 +1,12 @@
 // All subject identity and external destinations live here. Course-specific Canvas
 // IDs and the student's ArchersHub URL are supplied through the link editor.
 export const SUBJECTS = [
-  { id: 'CSOPESY', name: 'CSOPESY', color: '#64463D', text: '#FFF7EE', tint: '#E9DED7' },
-  { id: 'LCASEAN', name: 'LCASEAN', color: '#C98F99', text: '#422B30', tint: '#F2E0E3' },
-  { id: 'NSETRON', name: 'NSETRON', color: '#E6D2AC', text: '#503B2E', tint: '#F3EBD9' },
-  { id: 'CSSWENG', name: 'CSSWENG', color: '#81716B', text: '#FFF8F1', tint: '#E9E3DF' },
-  { id: 'NSCOM03', name: 'NSCOM03', color: '#C6B7A9', text: '#48372D', tint: '#EEE7E0' },
-  { id: 'Extracurricular', name: 'Extracurricular', color: '#B96F66', text: '#241410', tint: '#F1DEDA' },
+  { id: 'CSOPESY', name: 'CSOPESY', color: '#9B8276', text: '#2F2520', tint: '#EAE0D9' },
+  { id: 'LCASEAN', name: 'LCASEAN', color: '#D8A7B3', text: '#422C34', tint: '#F6E8EC' },
+  { id: 'NSETRON', name: 'NSETRON', color: '#E4D1AE', text: '#51412F', tint: '#F5EDDC' },
+  { id: 'CSSWENG', name: 'CSSWENG', color: '#B4B0A7', text: '#302D29', tint: '#EBE9E4' },
+  { id: 'NSCOM03', name: 'NSCOM03', color: '#AEBCA3', text: '#34412F', tint: '#E8EEE2' },
+  { id: 'Extracurricular', name: 'Extracurricular', color: '#C7A38E', text: '#3D2B23', tint: '#F1E5DD' },
 ];
 export const QUICK_LINKS = [
   { id: 'gmail', title: 'Gmail', url: 'https://mail.google.com/' },

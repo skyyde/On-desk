@@ -2,7 +2,7 @@ import {useEffect,useMemo,useRef,useState} from 'react';
 import {ChevronLeft,ChevronRight,CalendarDays,Plus,X,GripVertical,Check,BookOpen} from 'lucide-react';
 import {SUBJECTS,COURSE_DESCRIPTIONS} from './constants';
 import './calendar.css';
-const MIN='2026-09-01',MAX='2026-12-31',HOUR=64;
+const MIN='2026-09-01',MAX='2029-12-31',HOUR=64;
 const pad=n=>String(n).padStart(2,'0');
 const key=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
 const date=s=>new Date(`${s}T12:00:00`);

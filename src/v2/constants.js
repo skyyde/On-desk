@@ -18,7 +18,7 @@ export const QUICK_LINKS = [
 ];
 export const COURSE_LINKS = ['NSETRON', 'CSSWENG', 'LCASEAN', 'CSOPESY', 'NSCOM03'].map(subject => ({ id: subject, subject, title: subject, url: '' }));
 export const SEMESTER_START = '2026-09-01';
-export const SEMESTER_END = '2026-12-31';
+export const SEMESTER_END = '2029-12-31';
 export const subjectById = subject => SUBJECTS.find(item => item.id === subject) || SUBJECTS[0];
 
 export const COURSE_DESCRIPTIONS = {NSETRON:'Practical Electricity & Electronics', CSSWENG:'Software Engineering', LCASEAN:'The Filipino and ASEAN', CSOPESY:'Introduction to Operating Systems', NSCOM03:'Data Communications'};

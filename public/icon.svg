@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="110" fill="#F6EDE3"/><rect x="54" y="54" width="404" height="404" rx="82" fill="#C98F99"/><path d="M154 310c0-94 41-149 102-149s102 55 102 149" fill="none" stroke="#fffaf4" stroke-width="25" stroke-linecap="round"/><path d="M126 339h260" stroke="#64463D" stroke-width="17" stroke-linecap="round"/><circle cx="256" cy="124" r="12" fill="#fffaf4"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 1280">
+<rect width="1180" height="1280" fill="#f8e6e9"/>
+<path d="M240 1278 322 1134C223 1087 174 1006 168 891 162 780 208 683 305 590 248 539 164 493 128 425 76 327 68 260 110 198 156 122 228 140 291 158 412 191 509 301 591 369 669 273 745 179 876 131 985 89 1065 103 1098 156 1143 231 1069 391 1001 481 953 543 891 581 851 602 954 663 1037 762 1050 869 1072 1013 977 1095 829 1137L915 1278Z" fill="#f8f5eb" stroke="#393735" stroke-width="23" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M333 998 Q395 1079 468 1018 M748 996 Q808 1062 864 981" fill="none" stroke="#494743" stroke-width="14" stroke-linecap="round"/>
+<path d="M523 1080 662 1140 M663 1078 523 1140" stroke="#494743" stroke-width="12" stroke-linecap="round"/>
+</svg>
